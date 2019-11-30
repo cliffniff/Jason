@@ -2,7 +2,7 @@
 A multilingual digital virtual assistant.
   - Completly written with python.
   - Use APIs such as Google Translate,Google Speech Recognition, Microsoft TTS, Wikipedia API,IPDATA.CO API, and a free geolocation database.
-  - No AI, nueral networks, machine learning involved.
+  - No AI, nueral networks, machine learning involved. (Everything his hardcoded)
   - Can speak and recognize more than 70 languages.
   
  Please help me to improve this.
@@ -14,3 +14,6 @@ A multilingual digital virtual assistant.
   - Add more features.
   - Improve the UI.
   - Or may be just write this whole with a more efficient language such a s C++. (Just kidding 😁)
+  
+GIVE IT A TRY.
+!!!Hey I am 15 years old, so code may not be in the standards you want.!!!
