@@ -15,7 +15,7 @@ with speech_recognition.Microphone()as s:
             continue
         print(text)
         text = text.lower()
-        if text == "hey alpha" or text == "hay alpha" or text == "hay assistant" or text == "hey assistant"or text == "alpha":
+        if text == "hey jason" or text == "hay jason" or text == "hay assistant" or text == "hey assistant"or text == "jason":
             os.system("main.py")
         else:
             continue

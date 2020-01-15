@@ -1,1 +1,35 @@
-
+[2019] - Initialized[2019-12-14 12:07:14.135363] - --- Waked ---
+[2019-12-14 12:07:22.431537] - Did command_redirect
+[2019-12-14 12:12:01.333771] - --- Waked ---
+[2019-12-14 12:12:07.492662] - Did command_redirect
+[2019-12-14 12:12:16.555052] - Did command_redirect
+[2019-12-14 12:12:25.630230] - Did command_redirect
+[2019-12-14 12:12:33.185866] - Did command_redirect
+[2019-12-14 12:12:41.891087] - Did command_redirect
+[2019-12-14 12:12:52.252310] - Did command_redirect
+[2019-12-14 12:12:58.301847] - Did recognize
+[2019-12-14 12:21:58.996194] - --- Waked ---
+[2019-12-14 12:22:28.107951] - --- Waked ---
+[2019-12-14 12:22:36.133197] - Did recognize
+[2019-12-14 12:22:45.695774] - Did recognize
+[2019-12-14 12:56:10.245774] - --- Waked ---
+[2019-12-14 12:56:23.584069] - Did command_redirect
+[2019-12-14 12:56:29.681120] - Did recognize
+[2019-12-14 12:56:43.333404] - Did command_redirect
+[2019-12-14 12:59:08.066936] - --- Waked ---
+[2019-12-14 12:59:17.299619] - Did command_redirect
+[2019-12-14 12:59:36.518151] - invalid command name ".audio_win.!progressbar"
+[2019-12-14 12:59:36.635129] - Did play_song
+[2019-12-14 12:59:42.905328] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.905328] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 12:59:42.920949] - invalid command name ".!frame2.!label"
+[2019-12-14 13:02:30.593073] - --- Waked ---
+[2019-12-14 13:02:39.415262] - Did recognize

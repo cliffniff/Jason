@@ -60,7 +60,7 @@ toolbar = Frame(root)
 bar = Frame(root, bg="#CAC7C7")
 mic = PhotoImage(file="mic.gif", format="gif -index 0")
 root.wm_attributes('-topmost', True)
-root.title("Alpha")
+root.title("Jason")
 root.resizable(0, 0)
 root.overrideredirect(True)
 root.configure(background='white')
@@ -116,7 +116,7 @@ class InputDialog:
     def __init__(self, prompt):
         self.sub_root = Tk()
         root.withdraw()
-        self.sub_root.title("Alpha")
+        self.sub_root.title("Jason")
         self.sub_root.configure(background=fg_color)
         self.sub_root.overrideredirect(True)
         self.sub_root.iconbitmap("Icon.ico")
@@ -130,7 +130,7 @@ class InputDialog:
         y = screen_height / 2 - size[1] / 2
         self.sub_root.geometry("+%d+%d" % (x, y))
         self.sub_root.wm_attributes("-topmost", True)
-        self.sub_root.wm_attributes("-alpha", 0.8)
+        self.sub_root.wm_attributes('-alpha', 0.8)
         prompt_label = Label(self.sub_root, text=prompt, bg=fg_color, fg=colors_inverted[fg_color])
         self.var = StringVar(self.sub_root)
         entry = Entry(self.sub_root, textvariable=self.var, width=160,relief=FLAT,bd=0)
@@ -165,12 +165,12 @@ class ListDialog:
         x = screen_width / 2 - size[0] / 2
         y = screen_height / 2 - size[1] / 2
         self.sub_root.geometry("+%d+%d" % (x, y))
-        self.sub_root.title("Alpha")
+        self.sub_root.title("Jason")
         self.sub_root.configure(background=fg_color)
         self.sub_root.iconbitmap("Icon.ico")
         self.myfont = Font(root=self.sub_root, family="Candara", size=8)
         self.sub_root.wm_attributes("-topmost", True)
-        self.sub_root.wm_attributes("-alpha", 0.8)
+        self.sub_root.wm_attributes('-alpha', 0.8)
         label = Label(self.sub_root, text=prompt, fg=colors_inverted[fg_color], bg=fg_color)
         label.pack(fill=X)
         scroll = Scrollbar(self.sub_root)
@@ -1002,11 +1002,11 @@ def command_redirect(com):
     com = com.lower().strip()
     state('You said ' + com)
     if ((findwholeword('what is',com) and findwholeword('your name',com)) or (findwholeword("what's",com) and findwholeword('name',com)) or (findwholeword('who are',com) and findwholeword('you',com))) and not(findwholeword('my', com)):
-        g = random.choice(["Oh! I almost forget to introduce myself. I am Alpha, your beloved assistant", "Didn't I introduce myself. I am Alpha"])
+        g = random.choice(["Oh! I almost forget to introduce myself. I am Jason, your beloved assistant", "Didn't I introduce myself. I am Jason"])
         state(g)
         speak(g)
         next_com()
-    com.replace("Alpha", "")
+    com.replace("Jason", "")
     if (findwholeword("do", com) or findwholeword("what", com)) and (findwholeword("is", com) or findwholeword("know", com)) and findwholeword("my", com) and findwholeword("name", com) and not(findwholeword("your", com) ):
         g = random.choice(["Sorry! " + name + ", I don't know your name. What is your name? Hah, I'm just joking.", "Did you forget it! Oh! It is " + name])
         state(g)
@@ -1304,7 +1304,7 @@ def speak(text):
         tempt = tempt[0:-2]
         for i in tempt:
             if current_lang != 'en':
-                set_voice_rate(135)
+                set_voice_rate(150)
                 try:
                     temp_text = trans(i, to_lang=current_lang).extra_data["translation"][1][2]
                     if temp_text is not None:
@@ -1316,7 +1316,7 @@ def speak(text):
             laugh()
     else:
         if current_lang != 'en':
-            set_voice_rate(135)
+            set_voice_rate(150)
             try:
                 temp_text = trans(text, to_lang=current_lang).extra_data["translation"][1][2]
                 if temp_text is not None:
@@ -1460,6 +1460,7 @@ menu = Menu(root)
 options_menu = Menu(root)
 options_menu.add_command(label="Customize Theme Color", command=change_color)
 lang_menu = Menu(root)
+lang_menu.add_command(label='Afrikaans(af)', command=lambda: change_lang('af'))
 lang_menu.add_command(label='Afrikaans(af)', command=lambda: change_lang('af'))
 lang_menu.add_command(label='Albanian(sq)', command=lambda: change_lang('sq'))
 lang_menu.add_command(label='Amharic(am)', command=lambda: change_lang('am'))

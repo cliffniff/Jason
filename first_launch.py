@@ -19,7 +19,7 @@ def speak(text):
 class InputDialog:
     def __init__(self, prompt):
         self.sub_root = Tk()
-        self.sub_root.title("Alpha")
+        self.sub_root.title("Jason")
         self.myfont = Font(root=self.sub_root, family="Arial", size=8)
         self.sub_root.maxsize(320, 240)
         self.sub_root.wm_attributes("-topmost", True)
@@ -51,7 +51,7 @@ class ListDialog:
     def __init__(self, names, prompt):
         self.names = names
         self.sub_root = Tk()
-        self.sub_root.title("Alpha")
+        self.sub_root.title("Jason")
         self.myfont = Font(root=self.sub_root, family="Arial", size=8)
         self.sub_root.maxsize(640, 480)
         self.sub_root.wm_attributes("-topmost", True)
@@ -91,7 +91,7 @@ try:
 except:
     pass
 c = cp.ConfigParser()
-speak("Hello!!! I am Alpha, your loyal assistant.")
+speak("Hello!!! I am Jason, your loyal assistant.")
 speak("I need some of your information to personalize some content?")
 lang = ListDialog(list(map(lambda x: x.capitalize(), googletrans.LANGUAGES.values())), "Default language")
 lang.ask()
@@ -109,6 +109,7 @@ year = year.choice
 info = {"name": name, "year": year}
 c["Profile"] = info
 c["Settings"] = {"color": "#000000", "color_hex": "0,0,0", "lang":str(lang)}
+c["Other"] = {"lst_com": "null"}
 with open("config.ini", "w") as f:
     c.write(f)
 
