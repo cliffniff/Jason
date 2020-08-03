@@ -1,11 +1,11 @@
 # Jason
  
-The whole program is written with <i>python(3.x)</i>.
+The whole program is written with <i>python</i>.
 
-Some third party libraries are used.
+Dependencies
+ - See requirements.txt
 
 Add your own songs to the <b>Songs/</b> directory.
-
 
 <ul>
  Please help me by improving the quality of the program, by doing things such as,
@@ -13,3 +13,5 @@ Add your own songs to the <b>Songs/</b> directory.
  <li>   Improving speed,GUI responsiveness.</li>
  <li>   etc...</li>
 </ul>
+
+Disclaimer: This repository is no longer maintained and maybe outdated. IF you can maintain and improve this project, contact me at pvsakith@gmail.com.
